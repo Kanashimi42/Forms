@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    padding: 15px;
+    border: 1px solid #000;
+}
+.form__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.form__wrapper-flex {
+    display: flex;
+    align-items: center;
+}
+.form__wrapper-flex label:not(:last-child) {
+    margin-right: 10px;
+}
+.form__submit {
+    display: block;
+    width: 100%;
+}

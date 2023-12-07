@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form" action="#" method="POST">
+        <label class="form__label" for="name">Имя: </label>
+        <input class="form__input" type="text" name="name" id="name">
+
+        <label class="form__label" for="adres">Адрес: </label>
+        <input class="form__input" type="text" name="adres" id="adres">
+
+        <label class="form__label" for="number">Телефон: </label>
+        <input class="form__input" type="number" name="number" id="number">
+
+        <label class="form__label" for="email">Почта: </label>
+        <input class="form__input" type="email" name="email" id="email">
+
+        <label class="form__label" for="quantity">Количество палочек: </label>
+        <input class="form__input" type="number" name="quantity" id="quantity" max="10">
+
+        <p class="form__text">Вид палочек: </p>
+        <div class="form__wrapper-about">
+            <div class="form__wrapper">
+                <input type="radio" name="typeSticks" id="ordinary" checked>
+                <label for="ordinary">Обычные</label>
+            </div>
+            <div class="form__wrapper">
+                <input type="radio" name="typeSticks" id="educational">
+                <label for="educational">Учебные</label>
+            </div>
+        </div>
+        
+
+        <label for="sushi">Выберите суши: </label>
+        <select class="form__select" id="sushi" name="sushi" size="1">
+            <option value='springRolls'>Спринг-роллы</option>
+            <option value='nigiri'>Нигири</option>
+            <option value='sashimi'>Сашими</option>
+            <option value='maki'>Маки</option>
+            <option value='temaki'>Темаки</option>
+        </select>
+
+        <p class="form__text">Класть солфетки?</p>
+        <div class="form__wrapper-about">
+            <div class="form__wrapper">
+                <input type="radio" name="napkins" id="true" checked>
+                <label for="true">Да</label>
+            </div>
+            <div class="form__wrapper">
+                <input type="radio" name="napkins" id="false">
+                <label for="false">Нет</label>
+            </div>
+        </div>
+        
+        <label class="form__textarea-label" for="additional">Дополнительный комментарий</label>
+        <textarea class="form__textarea" name="additional" id="" cols="30" rows="10"></textarea>
+
+        <input class="button" type="submit" value="Отправить">
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+input {
+    display: block;
+}
+.form {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #000;
+}
+.form__input {
+    margin-bottom: 15px;
+}
+.form__wrapper-about {
+    display: flex;
+    align-items: center;
+}
+.form__wrapper {
+    display: flex;
+}
+.form__wrapper:first-child {
+    margin-right: 10px;
+}
+.form__select {
+    margin: 15px 0;
+}
+.form__text {
+    margin-bottom: 5px;
+}
+.form__textarea-label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.form__textarea {
+    display: block;
+
+    min-width: 100px;
+    min-height: 100px;
+
+    max-width: 250px;
+    max-height: 200px;
+}
+.button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}

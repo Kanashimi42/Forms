@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <form class="form" action="#" method="post">
+        <div class="form__item">
+            <label class="form__label" for="nickname">Никнейм: </label>
+            <input class="form__input" type="text" id="nickname">
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="email">Почта: </label>
+            <input class="form__input" type="email" id="email">
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="dateOfBirth">Дата рождения: </label>
+            <input class="form__input" type="date" id="dateOfBirth">
+        </div>
+        <div class="form__item">
+            <p>Пол: </p>
+            <div class="form__wrapper-flex">
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Мужской</label>
+        
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Женский</label>
+            </div>
+        </div>
+        <div class="form__item">
+            <p>Страна: </p>
+            <select name="City" size="1">
+                <option value='canada'>Канада</option>
+                <option value='greatbritain'>Великобритания</option>
+                <option value='germany'>Германия</option>
+                <option value='ukraine'>Украина</option>
+                <option value='austria'>Австрия</option>
+                <option value='portugal'>Португалия</option>
+                <option value='mexico'>Мексика</option>
+            </select>
+        </div>
+        <div class="form__item">
+            <p>Тип героя: </p>
+            <select name="City" size="1">
+                <option value='tank'>Танк</option>
+                <option value='dps'>Урон</option>
+                <option value='heal'>Поддержка</option>
+            </select>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="level">Уровень: (0-100)</label>
+            <input class="form__input" type="number" name="level" id="level" min="0" max="100">
+        </div>
+        <div class="form__item">
+            <input class="form__submit" type="submit" value="Отправить">
+        </div>
+    </form>
+</body>
+</html>
